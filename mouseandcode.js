@@ -135,18 +135,23 @@ const waitForEnter = require('./components/waitForEnter.js');
         console.log("DDDDDDDDDD");
         // console.log('editIntoSketchFunction')
         // editIntoSketchFunction(editOptions1, newPage);
-        ////////////////////////////////////////////////////////////////////////////
         // Use the retrieved options for further actions (e.g., copySketchFunction)
         console.log('copySketchFunction')
         copySketchFunction(editOptions1, newPage);
         // Select sketch to click or unclick, good code to select and unselect
-        console.log("QQQQQQQQQQQ");
+
+        console.log("PASTE INTO SKETCH");
         await waitForEnter();
-        console.log("RRRRRRRRRRR");
+        //We get an error here, because the title7 and selector7 just changed. 
+        // const selector7 = 'div[data-id="AJC+8X/uU1MWWXEK"]'; // Replace with the appropriate selector
+        const title20 = '(3) Extrude Sketch(1.03)'; // Replace with the desired title
+        const editOptions20 = await performRightClickOptionByTitle(newPage, selector7, title20);
+        console.log("PASTE INTO SKETCH");
         //Testing code
-        // pasteIntoSketchFunction(editOptions7, newPage);
-
-
+        console.log("CCCCCCCCCC");
+        await waitForEnter();
+        console.log("DDDDDDDDDD");
+        pasteIntoSketchFunction(editOptions20, newPage);
 
         ///////WORKING, NEED TO CHANGE THE (3) Extrude Sketch(1.03)
         // const desiredIndex7 = 7;
