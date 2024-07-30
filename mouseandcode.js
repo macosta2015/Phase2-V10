@@ -105,12 +105,35 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         ////////////////////////////////////////////////////////////////////////////
 
 
+
+
+
+
+
+
+        console.log("QQQQQQQQQQQ");
+        await waitForEnter();
+        console.log("RRRRRRRRRRR");
+        //Working on (2) Extrude 1(4.00)
+        ////////////////////////////////////////////////////////////////////////////
+        const selector1 = 'div[data-id="Dg4JdGx6jlZTm4XD"]'; // Replace with the appropriate selector
+        const title1 = '(1) Initial Sketch'; // Replace with the desired title
+        console.log('Right-clicking on the specified element.');
+        const editOptions1 = await performRightClickOptionByTitle(newPage, selector1, title1);
+        console.log(editOptions1);
+        console.log("CCCCCCCCCC");
+        await waitForEnter();
+        console.log("DDDDDDDDDD");
+        // console.log('editIntoSketchFunction')
+        // editIntoSketchFunction(editOptions1, newPage);
+        ////////////////////////////////////////////////////////////////////////////
         // Use the retrieved options for further actions (e.g., copySketchFunction)
-        // console.log('copySketchFunction')
-        // copySketchFunction(editOptions3, newPage);
-
-
+        console.log('copySketchFunction')
+        copySketchFunction(editOptions1, newPage);
         // Select sketch to click or unclick, good code to select and unselect
+        console.log("QQQQQQQQQQQ");
+        await waitForEnter();
+        console.log("RRRRRRRRRRR");
         // console.log('Waiting 10 seconds.');
         // await new Promise(resolve => setTimeout(resolve, 10000)); // Wait for 10 seconds
         // await newPage.evaluate(() => {
@@ -122,12 +145,37 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         //         console.error('Third button not found.');
         //     }
         // });
-        // console.log("Third button clicked and scrolled into view.");
+        // console.log("QQQQQQQQQQQ");
+        // await waitForEnter();
+        // console.log("RRRRRRRRRRR");
 
 
-        console.log("QQQQQQQQQQQ");
-        await waitForEnter();
-        console.log("RRRRRRRRRRR");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         //Working on (5) Extrude 3 PLAY(2.00)
