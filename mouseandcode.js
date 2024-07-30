@@ -54,8 +54,6 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         ///////WORKING, NEED TO CHANGE THE (3) Extrude Sketch(1.03)
         await newPage.keyboard.press('Enter');
         console.log('await newPage.keyboard.press')
-
-        //Select index
         const desiredIndex7 = 7;
         await clickButtonByIndex(newPage, desiredIndex7);
         console.log("GGGGGGGGGGGG");
@@ -66,8 +64,6 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log('Right-clicking on the specified element.');
         const editOptions7 = await performRightClickOptionByTitle(newPage, selector7, title7);
         console.log(editOptions7);
-
-
         console.log("IIIIIIIIIIII");
         await waitForEnter();
         console.log("JJJJJJJJJJJJJ");
@@ -82,8 +78,9 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
 
 
         ///////WORKING, NEED TO CHANGE THE (3) Extrude Sketch(1.03)
-        await newPage.keyboard.press('Enter');
-        console.log('await newPage.keyboard.press')
+        //commented out
+        // await newPage.keyboard.press('Enter');
+        // console.log('await newPage.keyboard.press')
 
 
         //Select index
