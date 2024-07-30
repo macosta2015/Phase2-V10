@@ -28,9 +28,6 @@ const waitForEnter = require('./components/waitForEnter.js');
         const newPage = await launchBrowserAndNavigateToDocument(); // Ensure this returns a newPage object
 
 
-
-
-
         console.log("AAAAAAAAAA");
         await waitForEnter();
         console.log("BBBBBBBBBB");
