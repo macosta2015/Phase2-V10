@@ -62,7 +62,8 @@ const waitForEnter = require('./components/waitForEnter.js');
         await waitForEnter();
         console.log("HHHHHHHHHH");
         const selector7 = 'div[data-id="AJC+8X/uU1MWWXEK"]'; // Replace with the appropriate selector
-        const title7 = '(3) Extrude Sketch(1.03) did not regenerate properly: Select a sketch plane.<br>1 missing selection'; // Replace with the desired title
+        const title7 = '(3) Extrude Sketch(1.03) did not regenerate properly: Select a sketch plane.'; // Replace with the desired title
+        // const title7 = '(3) Extrude Sketch(1.03) did not regenerate properly: Select a sketch plane.<br>1 missing selection'; // Replace with the desired title
         console.log('Right-clicking on the specified element.');
         const editOptions7 = await performRightClickOptionByTitle(newPage, selector7, title7);
         console.log(editOptions7);
@@ -96,7 +97,9 @@ const waitForEnter = require('./components/waitForEnter.js');
         //Working on (4) Extrude 2
         ////////////////////////////////////////////////////////////////////////////
         const selector8 = 'div[data-id="mypaWa+39o7YTdnA"]'; // Replace with the appropriate selector
-        const title8 = '(4) Extrude 2 did not regenerate properly: No merge scope selected.<br>1 missing selection';
+        // const title8 = '(4) Extrude 2 did not regenerate properly: No merge scope selected.<br>1 missing selection';
+        // const title8 = '(4) Extrude 2 did not regenerate properly: Select face or sketch region to extrude.<br>1 missing selection';
+        const title8 = '(4) Extrude 2 did not regenerate properly: Select face or sketch region to extrude.';
         console.log('Right-clicking on the specified element.');
         const editOptions8 = await performRightClickOptionByTitle(newPage, selector8, title8);
         console.log(editOptions8);
