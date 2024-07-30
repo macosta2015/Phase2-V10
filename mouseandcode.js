@@ -10,11 +10,15 @@ const copySketchFunction = require('./components/copySketchFunction.js');
 const pasteIntoSketchFunction = require('./components/pasteIntoSketchFunction.js');
 const editIntoSketchFunction = require('./components/editIntoSketchFunction.js');
 const renameIntoSketchFunction = require('./components/renameIntoSketchFunction.js');
+//GOOD WORKING const waitForEnter = require('./components/waitForEnter.js');
 const waitForEnter = require('./components/waitForEnter.js');
+// Set the maximum number of listeners
+require('events').EventEmitter.defaultMaxListeners = 20;
 const searchAndClickTransform = require('./components/searchAndClickTransform.js');
 const searchAndClickCustomExtrude2 = require('./components/searchAndClickCustomExtrude2.js');
 const searchAndClickExtrude = require('./components/searchAndClickExtrude.js');
 const { performRightClickOptionByTitle } = require('./components/performRightClickOptionByTitle.js');
+
 
 (async () => {
     try {
@@ -111,6 +115,13 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
 
 
 
+
+
+
+
+
+
+        ////////////////////////////////////////////////////////////////////////////
         console.log("QQQQQQQQQQQ");
         await waitForEnter();
         console.log("RRRRRRRRRRR");
@@ -134,20 +145,19 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log("QQQQQQQQQQQ");
         await waitForEnter();
         console.log("RRRRRRRRRRR");
-        // console.log('Waiting 10 seconds.');
-        // await new Promise(resolve => setTimeout(resolve, 10000)); // Wait for 10 seconds
-        // await newPage.evaluate(() => {
-        //     const thirdButton = document.querySelectorAll('.os-list-item-name')[5];
-        //     if (thirdButton) {
-        //         thirdButton.click();
-        //         thirdButton.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
-        //     } else {
-        //         console.error('Third button not found.');
-        //     }
-        // });
-        // console.log("QQQQQQQQQQQ");
-        // await waitForEnter();
-        // console.log("RRRRRRRRRRR");
+        //Testing code
+        // pasteIntoSketchFunction(editOptions7, newPage);
+
+
+
+        ///////WORKING, NEED TO CHANGE THE (3) Extrude Sketch(1.03)
+        // const desiredIndex7 = 7;
+        // await clickButtonByIndex(newPage, desiredIndex7);
+        console.log("GGGGGGGGGGGG");
+        await waitForEnter();
+        console.log("HHHHHHHHHH");
+        ////////////////////////////////////////////////////////////////////////////
+
 
 
 
@@ -430,7 +440,6 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         console.log("QQQQQQQQQQQ")
         // RIGHT CLICK
         //ALL THE FOLLOWING CODE NEEDS TO GO TOGETHER
-        console.log('pasteIntoSketchFunction');
         console.log('pasteIntoSketchFunction');
         await new Promise(resolve => setTimeout(resolve, 10000)); // Wait for 10 seconds
         const desiredIndex9 = 8; //IMPORTANT PART THAT MAKES THE CODE RUN!
