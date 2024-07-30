@@ -10,14 +10,15 @@ const copySketchFunction = require('./components/copySketchFunction.js');
 const pasteIntoSketchFunction = require('./components/pasteIntoSketchFunction.js');
 const editIntoSketchFunction = require('./components/editIntoSketchFunction.js');
 const renameIntoSketchFunction = require('./components/renameIntoSketchFunction.js');
-//GOOD WORKING const waitForEnter = require('./components/waitForEnter.js');
-const waitForEnter = require('./components/waitForEnter.js');
-// Set the maximum number of listeners
 require('events').EventEmitter.defaultMaxListeners = 20;
 const searchAndClickTransform = require('./components/searchAndClickTransform.js');
 const searchAndClickCustomExtrude2 = require('./components/searchAndClickCustomExtrude2.js');
 const searchAndClickExtrude = require('./components/searchAndClickExtrude.js');
 const { performRightClickOptionByTitle } = require('./components/performRightClickOptionByTitle.js');
+
+//GOOD WORKING const waitForEnter = require('./components/waitForEnter.js');
+const waitForEnter = require('./components/waitForEnter.js');
+// Set the maximum number of listeners
 
 
 (async () => {
